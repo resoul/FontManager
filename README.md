@@ -1,9 +1,9 @@
-# MyFontsPackage
+# FontManager
 
 [![Swift Package Manager compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS-lightgrey.svg)](https://swift.org/package-manager/)
 
-`FontManager` is a Swift Package that provides a convenient way to manage and use custom fonts (such as Montserrat and Roboto) in iOS, macOS, tvOS, and watchOS applications.
+`FontManager` is a Swift Package that provides a convenient way to manage and use custom fonts (such as Montserrat and Roboto) in iOS, tvOS applications.
 
 The package allows for selective loading of only the font families you need, helping to reduce app size and optimize performance.
 
