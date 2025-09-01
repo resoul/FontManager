@@ -49,6 +49,8 @@ public final class FontManagerBuilder {
                 fontManager.registerFonts(fontFamily: Fonts.Montserrat.self)
             case is Fonts.Roboto.Type:
                 fontManager.registerFonts(fontFamily: Fonts.Roboto.self)
+            case is Fonts.Poppins.Type:
+                fontManager.registerFonts(fontFamily: Fonts.Poppins.self)
             default:
                 break
             }

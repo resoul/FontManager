@@ -25,7 +25,7 @@ Add both `FontManager` and `AtomicKit` to your Xcode project. In your `Package.s
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/resoul/FontManager.git", from: "2.0.0"),
+    .package(url: "https://github.com/resoul/FontManager.git", from: "2.1.0"),
     .package(url: "https://github.com/resoul/AtomicKit.git", from: "1.0.0")
 ]
 ```

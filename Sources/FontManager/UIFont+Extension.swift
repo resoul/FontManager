@@ -21,6 +21,12 @@ public extension UIFont {
         return fontService.getFont(style, size: size)
     }
 
+    static func poppins(_ style: Fonts.Poppins, size: CGFloat) -> UIFont? {
+        let container = SafeContainer.shared
+        let fontService: FontService = container.resolve(FontService.self)
+        return fontService.getFont(style, size: size)
+    }
+
     static func amazonWithFallback(_ style: Fonts.Amazon, size: CGFloat, fallback: UIFont.Weight = .regular) -> UIFont {
         return amazon(style, size: size) ?? UIFont.systemFont(ofSize: size, weight: fallback)
     }
@@ -30,6 +36,10 @@ public extension UIFont {
     }
 
     static func robotoWithFallback(_ style: Fonts.Roboto, size: CGFloat, fallback: UIFont.Weight = .regular) -> UIFont {
+        return roboto(style, size: size) ?? UIFont.systemFont(ofSize: size, weight: fallback)
+    }
+
+    static func poppinsWithFallback(_ style: Fonts.Poppins, size: CGFloat, fallback: UIFont.Weight = .regular) -> UIFont {
         return roboto(style, size: size) ?? UIFont.systemFont(ofSize: size, weight: fallback)
     }
 }

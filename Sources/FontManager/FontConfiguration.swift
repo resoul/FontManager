@@ -37,7 +37,7 @@ public struct FontConfiguration {
 
     public static var `default`: FontConfiguration {
         return FontConfiguration(
-            families: [Fonts.Montserrat.self, Fonts.Roboto.self, Fonts.Amazon.self]
+            families: [Fonts.Montserrat.self, Fonts.Roboto.self, Fonts.Poppins.self, Fonts.Amazon.self]
         )
     }
 }

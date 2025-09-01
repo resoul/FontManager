@@ -88,4 +88,42 @@ public enum Fonts {
             }
         }
     }
+
+    public enum Poppins: String, FontRepresentable {
+        case black = "Poppins-Black"
+        case blackItalic = "Poppins-BlackItalic"
+        case bold = "Poppins-Bold"
+        case boldItalic = "Poppins-BoldItalic"
+        case italic = "Poppins-Italic"
+        case light = "Poppins-Light"
+        case lightItalic = "Poppins-LightItalic"
+        case medium = "Poppins-Medium"
+        case mediumItalic = "Poppins-MediumItalic"
+        case regular = "Poppins-Regular"
+        case thin = "Poppins-Thin"
+        case thinItalic = "Poppins-ThinItalic"
+
+        public static var familyName: String { "Poppins" }
+
+        // Convenience computed properties
+        public var weight: UIFont.Weight {
+            switch self {
+            case .thin, .thinItalic: return .thin
+            case .light, .lightItalic: return .light
+            case .regular, .italic: return .regular
+            case .medium, .mediumItalic: return .medium
+            case .bold, .boldItalic: return .bold
+            case .black, .blackItalic: return .black
+            }
+        }
+
+        public var isItalic: Bool {
+            switch self {
+            case .blackItalic, .boldItalic, .italic, .lightItalic, .mediumItalic, .thinItalic:
+                return true
+            default:
+                return false
+            }
+        }
+    }
 }
