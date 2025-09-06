@@ -31,6 +31,6 @@ public extension UIFont {
     }
 
     static func poppinsWithFallback(_ style: Fonts.Poppins, size: CGFloat, fallback: UIFont.Weight = .regular) -> UIFont {
-        return roboto(style, size: size) ?? UIFont.systemFont(ofSize: size, weight: fallback)
+        return poppins(style, size: size) ?? UIFont.systemFont(ofSize: size, weight: fallback)
     }
 }
