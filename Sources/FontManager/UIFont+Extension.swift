@@ -1,30 +1,21 @@
 import UIKit
-import AtomicKit
 
 public extension UIFont {
 
     static func amazon(_ style: Fonts.Amazon, size: CGFloat) -> UIFont? {
-        let container = SafeContainer.shared
-        let fontService: FontService = container.resolve(FontService.self)
-        return fontService.getFont(style, size: size)
+        return UIFont(name: style.rawValue, size: size)
     }
 
     static func montserrat(_ style: Fonts.Montserrat, size: CGFloat) -> UIFont? {
-        let container = SafeContainer.shared
-        let fontService: FontService = container.resolve(FontService.self)
-        return fontService.getFont(style, size: size)
+        return UIFont(name: style.rawValue, size: size)
     }
 
     static func roboto(_ style: Fonts.Roboto, size: CGFloat) -> UIFont? {
-        let container = SafeContainer.shared
-        let fontService: FontService = container.resolve(FontService.self)
-        return fontService.getFont(style, size: size)
+        return UIFont(name: style.rawValue, size: size)
     }
 
     static func poppins(_ style: Fonts.Poppins, size: CGFloat) -> UIFont? {
-        let container = SafeContainer.shared
-        let fontService: FontService = container.resolve(FontService.self)
-        return fontService.getFont(style, size: size)
+        return UIFont(name: style.rawValue, size: size)
     }
 
     static func amazonWithFallback(_ style: Fonts.Amazon, size: CGFloat, fallback: UIFont.Weight = .regular) -> UIFont {

@@ -1,13 +1,13 @@
 import UIKit
-import AtomicKit
 
 public enum Fonts {
 
     public enum Amazon: String, FontRepresentable {
+        case emberMedium = "AmazonEmber-Md"
+        case emberBold = "AmazonEmber_Bd"
         case emberRegular = "AmazonEmber_Rg"
+        case emberDisplayMedium = "AmazonEmberDisplay_Md"
         case emberDisplayRegular = "AmazonEmberDisplay_Rg"
-
-        public static var familyName: String { "Amazon" }
     }
 
     public enum Montserrat: String, FontRepresentable {
@@ -25,30 +25,6 @@ public enum Fonts {
         case semiBoldItalic = "Montserrat-SemiBoldItalic"
         case thin = "Montserrat-Thin"
         case thinItalic = "Montserrat-ThinItalic"
-
-        public static var familyName: String { "Montserrat" }
-
-        // Convenience computed properties
-        public var weight: UIFont.Weight {
-            switch self {
-            case .thin, .thinItalic: return .thin
-            case .light, .lightItalic: return .light
-            case .regular, .italic: return .regular
-            case .medium, .mediumItalic: return .medium
-            case .semiBold, .semiBoldItalic: return .semibold
-            case .bold, .boldItalic: return .bold
-            case .black, .blackItalic: return .black
-            }
-        }
-
-        public var isItalic: Bool {
-            switch self {
-            case .blackItalic, .boldItalic, .italic, .lightItalic, .mediumItalic, .semiBoldItalic, .thinItalic:
-                return true
-            default:
-                return false
-            }
-        }
     }
 
     public enum Roboto: String, FontRepresentable {
@@ -64,29 +40,6 @@ public enum Fonts {
         case regular = "Roboto-Regular"
         case thin = "Roboto-Thin"
         case thinItalic = "Roboto-ThinItalic"
-
-        public static var familyName: String { "Roboto" }
-
-        // Convenience computed properties
-        public var weight: UIFont.Weight {
-            switch self {
-            case .thin, .thinItalic: return .thin
-            case .light, .lightItalic: return .light
-            case .regular, .italic: return .regular
-            case .medium, .mediumItalic: return .medium
-            case .bold, .boldItalic: return .bold
-            case .black, .blackItalic: return .black
-            }
-        }
-
-        public var isItalic: Bool {
-            switch self {
-            case .blackItalic, .boldItalic, .italic, .lightItalic, .mediumItalic, .thinItalic:
-                return true
-            default:
-                return false
-            }
-        }
     }
 
     public enum Poppins: String, FontRepresentable {
@@ -102,28 +55,5 @@ public enum Fonts {
         case regular = "Poppins-Regular"
         case thin = "Poppins-Thin"
         case thinItalic = "Poppins-ThinItalic"
-
-        public static var familyName: String { "Poppins" }
-
-        // Convenience computed properties
-        public var weight: UIFont.Weight {
-            switch self {
-            case .thin, .thinItalic: return .thin
-            case .light, .lightItalic: return .light
-            case .regular, .italic: return .regular
-            case .medium, .mediumItalic: return .medium
-            case .bold, .boldItalic: return .bold
-            case .black, .blackItalic: return .black
-            }
-        }
-
-        public var isItalic: Bool {
-            switch self {
-            case .blackItalic, .boldItalic, .italic, .lightItalic, .mediumItalic, .thinItalic:
-                return true
-            default:
-                return false
-            }
-        }
     }
 }
