@@ -1,12 +1,12 @@
 import UIKit
 
 public enum Fonts {
-
     public enum Amazon: String, FontRepresentable {
         case emberMedium = "AmazonEmber-Md"
         case emberBold = "AmazonEmber_Bd"
         case emberRegular = "AmazonEmber_Rg"
         case emberDisplayMedium = "AmazonEmberDisplay_Md"
+        case emberDisplayLight = "AmazonEmberDisplay_Lt"
         case emberDisplayRegular = "AmazonEmberDisplay_Rg"
     }
 
@@ -55,5 +55,18 @@ public enum Fonts {
         case regular = "Poppins-Regular"
         case thin = "Poppins-Thin"
         case thinItalic = "Poppins-ThinItalic"
+    }
+
+    public enum Lato: String, FontRepresentable {
+        case black = "Lato-Black"
+        case blackItalic = "Lato-BlackItalic"
+        case bold = "Lato-Bold"
+        case boldItalic = "Lato-BoldItalic"
+        case italic = "Lato-Italic"
+        case light = "Lato-Light"
+        case lightItalic = "Lato-LightItalic"
+        case regular = "Lato-Regular"
+        case thin = "Lato-Thin"
+        case thinItalic = "Lato-ThinItalic"
     }
 }

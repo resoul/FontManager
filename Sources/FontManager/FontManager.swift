@@ -1,7 +1,6 @@
 import UIKit
 
 public struct FontManager {
-
     public static func registerFonts<T: FontRepresentable>(fontFamily: T.Type) {
         let bundle = Bundle.module
 
